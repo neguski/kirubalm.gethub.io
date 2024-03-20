@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+img{
+    width:100%;
+    max-width: 100%;
+}
+body{
+    background-color: #121213d5;
+    color:#ededed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    color:#ededed;
+}
+.navbar a{
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color:#ededed;
+    margin-left:35px;
+    transform: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:#00abf0;
+}
+.home{
+    display: flex;
+    background: url('images/oliver\ typewriter.jpg') no-repeat;
+    margin:0 auto;
+    background-size: cover;
+    background-position:left bottom;
+    align-items:center;
+    height: 100vh;
+    padding:0 10%;
+}
+.home-content{
+    max-width:600px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:#00abf0
+}
+.home-content p{
+    font-size:16px;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box a{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: #00abf0;
+    border:2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color:#081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index:1;
+    overflow:hidden;
+    transition:.5s;
+}
+.btn-box a:hover{
+    color:#00abf0
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color:#00abf0
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b26;
+}
+.btn-box a:nth-child(2)::before{
+    background-color: #00abf0;
+}
+.btn-box a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition:.5s;
+}
+.btn-box a:hover::before{
+    width:100%;
+} 
+
+.home-sci{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border:2px solid #00abf0;
+    border-radius:50%;
+    font-size: 20px;
+    color:#00abf0;
+    overflow:hidden;
+    z-index: 1;
+    transition:.5s;
+}
+.home-sci a:hover{
+    color:#081b29;
+}
+.home-sci a::before{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    z-index: -1;
+    background:#00abf0;
+    transition: .5s;
+}
+.home-sci a:hover::before{
+    width:100%;
+}
+
+
+/* ======== Project Section ======= */
+
+.Project{
+    box-shadow: 20px 20px 33px rgb(140, 140, 140);
+    border-radius:15px;
+}
+.rounded-5{
+    box-shadow: 2px 0px 2px rgb(161, 64, 64), 2px 0px 2px rgb(31, 99, 125);
+}
+
+.main-project p:hover{
+    color:#00abf0;
+}
+.main-project p{
+    font-weight: 500;
+    font-style: italic;
+    font-size:20px
+}
+.main-project p{
+    box-shadow: 10px 10px 10px hsl(0, 79%, 20%);
+    border-radius:2%;
+}
+
+/* ======== Project Section ENDS ======= */
+
+
+/* ======== LASTSection STARTS======= */
+.last{
+    background-image:url(images/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+
+.last-content{
+    width:100%;
+    margin:0 auto;
+}
+.last-content{
+    display: flex;
+}
+.bcgImg{
+    background-image:url('images/puppy.jpg');
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 310px;
+
+}
+.bcgImg2{
+    background-image:url('images/apple.jpg');
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 310px;
+}
+
+
+/* ======== LASTSection ENDS ======= */
